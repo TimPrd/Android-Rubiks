@@ -1,4 +1,4 @@
-package com.rodpil.rubik;
+package com.rodpil.rubik.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -15,6 +15,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.rodpil.rubik.R;
+
 public class TestConnection extends Activity {
 
     TextView textResponse;
@@ -26,11 +28,9 @@ public class TestConnection extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editTextAddress = (EditText)findViewById(R.id.address);
-        editTextPort = (EditText)findViewById(R.id.port);
-        buttonConnect = (Button)findViewById(R.id.connect);
-        buttonClear = (Button)findViewById(R.id.clear);
-        textResponse = (TextView)findViewById(R.id.response);
+        editTextAddress = findViewById(R.id.address);
+        editTextPort = findViewById(R.id.port);
+        textResponse = findViewById(R.id.response);
 
         buttonConnect.setOnClickListener(buttonConnectOnClickListener);
 

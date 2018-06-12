@@ -1,4 +1,4 @@
-package com.rodpil.rubik;
+package com.rodpil.rubik.Test;
 
 public class TestCube {
     public static Integer[][] flamingo() {

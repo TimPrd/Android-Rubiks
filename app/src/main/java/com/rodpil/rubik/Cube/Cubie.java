@@ -1,11 +1,14 @@
-package com.rodpil.rubik;
+package com.rodpil.rubik.Cube;
 
+/**
+ * This class target one cube of on one face (= a cubie).
+ * Used with OpenCV to detect where is the cube/closest color of cube
+ */
 public class Cubie {
 
     private int x;
     private int y;
     private double[] color;
-    private int indexCoul;
 
     public Cubie(int x, int y, double[] color) {
         this.x = x;
@@ -22,7 +25,9 @@ public class Cubie {
         return y;
     }
 
-
+    /**
+     * @return the closest color existing on a cube from the color of the cubie in the picture
+     */
     public String getClosestColor() {
         double diff = 9999;
         String res = "";
@@ -46,7 +51,4 @@ public class Cubie {
         return color;
     }
 
-    public int getIndexCoul() {
-        return indexCoul;
-    }
 }

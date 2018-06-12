@@ -3,15 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ImageManipulationsActivity" >
+    tools:context=".Activity.ImageManipulationsActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:autoLink="web"
-        android:text="http://android-er.blogspot.com/"
-        android:textStyle="bold" />
     <EditText
         android:id="@+id/address"
         android:layout_width="match_parent"
@@ -22,16 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Secret" />
-    <Button
-        android:id="@+id/connect"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Connect..."/>
-    <Button
-        android:id="@+id/clear"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Clear"/>
+
     <TextView
         android:id="@+id/response"
         android:layout_width="wrap_content"
@@ -56,37 +40,41 @@
     </GridLayout>
 
     <Button
-        android:id="@+id/btnScan"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_columnWeight="1"
-        android:gravity="center"
-        android:layout_gravity="fill_horizontal"
-        android:background="@color/colorAccent"
-        android:text="Scanner face (bêta)" />
-
-    <Button
         android:id="@+id/btnValider"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_columnWeight="1"
-        android:gravity="center"
         android:layout_gravity="fill_horizontal"
-        android:background="@color/colorAccent"
+        android:layout_marginTop="3dp"
+        android:background="#4050ff"
+        android:gravity="center"
         android:text="Validate face" />
+
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginTop="14dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="Scanner face (bêta)" />
 
     <Button
         android:id="@+id/btnConnect"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_columnWeight="1"
-        android:gravity="center"
         android:layout_gravity="fill_horizontal"
-        android:background="@color/colorAccent"
+        android:layout_marginTop="14dp"
+        android:background="#59ff40"
+        android:gravity="center"
         android:text="Connect" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView" />
+
 </LinearLayout>
